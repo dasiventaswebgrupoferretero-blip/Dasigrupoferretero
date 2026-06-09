@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/indexPedidos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <meta name="description" content="DASI grupo ferretero, Somos una empresa especializada en la venta de herramientas, equipos, materiales y accesorios para el hogar, la industria, la construcción y el mantenimiento. Nuestro objetivo es ofrecer productos de alta calidad que ayuden a nuestros clientes a realizar sus proyectos de manera eficiente, segura y profesional. ">
+    <meta rel="icon" href="./assets/DASILOGO.png">
+    <meta name="theme-color" content="#6B143B">
+    <meta property="og:title" content="¡Bienvenido a nuestros productos!">
+    <meta property="og:description" content="Encuentra nustros mejores productos.">
+    <meta property="og:image" content="https://tudominio.com/../assets/img/Productos.png">
+    <meta poperty="og:url" content="https://tudominio..com/img/index.html">
+</head>
+<body>
+    <header>
+        <h1>DASI grupo ferretero</h1>
+        <img src="./assets/DASILOGO.png" alt="DASILOGO" class="logo">
+        <!-- Sin botón aquí -->
+    </header>
+    <!-- Botón directo en body, fuera del header -->
+    <button class="hamburger hamburger--spin" type="button" id="btnMenu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <nav class="nav" id="navMenu">
+        <a href="productos.html">
+            <img src="./assets/carrito-de-compras.png" alt="carrito">
+        </a>
+        <a href="index.html">Página principal</a>
+    </nav>
+    <section class="proveedores">
+        <h2>Nuestros Proveedores</h2>
+        <div class="carrusel-proveedores">
+            <div class="track">
+                <img src="./assets/LOGOTRUPER.png" alt="Proveedor 1">
+                <img src="./assets/LOGOPRETUL.png" alt="Proveedor 2">
+                <img src="./assets/IUSALOGO.png" alt="Proveedor 3">
+                <img src="./assets/ASKILOGO.png" alt="Proveedor 4">
+                <img src="./assets/ASTROMEX.jpg" alt="Proveedor 5">
+                <img src="./assets/EVERADY.jpg" alt="Proveedor 6">
+                <img src="./assets/STERENLOGO.jpg" alt="Proveedor 6">
+                <img src="./assets/MITZULOGO.jpg" alt="Proveedor 6">
+                <!-- DUPLI./assets/TOS MISMOS LOGOS AQUÍ para el loop infinito -->
+                <img src="./assets/LOGOTRUPER.png" alt="Proveedor 1">
+                <img src="./assets/LOGOPRETUL.png" alt="Proveedor 2">
+                <img src="./assets/IUSALOGO.png" alt="Proveedor 3">
+                <img src="./assets/ASKILOGO.png" alt="Proveedor 4">
+                <img src="./assets/ASTROMEX.jpg" alt="Proveedor 5">
+                <img src="./assets/EVERADY.jpg" alt="Proveedor 6">
+                <img src="./assets/STERENLOGO.jpg" alt="Proveedor 6">
+                <img src="./assets/MITZULOGO.jpg" alt="Proveedor 6">
+                <!-- Y unatercera vara un desplazamiento más suave -->
+                <img src="./assets/LOGOTRUPER.png" alt="Proveedor 1">
+                <img src="./assets/LOGOPRETUL.png" alt="Proveedor 2">
+                <img src="./assets/IUSALOGO.png" alt="Proveedor 3">
+                <img src="./assets/ASKILOGO.png" alt="Proveedor 4">
+                <img src="./assets/ASTROMEX.jpg" alt="Proveedor 5">
+                <img src="./assets/EVERADY.jpg" alt="Proveedor 6">
+                <img src="./assets/STERENLOGO.jpg" alt="Proveedor 6">
+                <img src="./assets/MITZULOGO.jpg" alt="Proveedor 6">
+            </div>
+        </div>
+    </section>
+    <main>
+        <input type="search" placeholder="Buscar producto....">
+        <div id="productos"></div>
+        <form action="https://formsubmit.co/dasiventaswebgrupoferretero@gmail.com" method="POST">
+            <h2>Formulario para hacer pedidos.</h2>
+            <h2>¡Escribe el producto que necesitas y nosotros nos ponemos en contacto contigo por WhatsApp o Correo electronico!</h2>
+            <h3>Realizamos entregas presenciales en el Estado de México, con cobertura en Valle de Chalco Solidaridad, Chalco, Ixtapaluca y municipios cercanos. Contáctanos para confirmar la disponibilidad de entrega en tu ubicación.</h3>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜ/s]+$" title="Nombre solo acepta letras y espacios en blanco" required><br>
+            <input type="number" name="numero" placeholder="Escribe tu numero de telefono" required><br>
+            <input type="email" name="correo" placeholder="Escribe tu correo" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Formato de correo invalido"  required>
+            <br>
+            <label for="producto">¡Escribe tu producto!</label><br>
+            <textarea name="producto" cols="20" rows="10" required></textarea>
+            <br>
+            <input type="submit">
+        </form>
+    </main> 
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/5215523034757?text=Hola%21%20Vengo%20de%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos." 
+        class="btn-whatsapp" 
+        target="_blank" 
+        rel="noopener noreferrer">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    <span>¡Pide Ahora!</span>
+</a>
+<footer>
+        <p>&copy; 2026 DASI Grupo Ferretero - Todos los derechos reservados</p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./js/index.js" type="module"></script>
+</html>
