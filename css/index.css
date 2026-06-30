@@ -360,11 +360,13 @@ header h1 {
 }
 .card-img {
     width: 100%;
-    height: clamp(150px, 30vw, 200px);
-    object-fit: cover;
+    height: 220px;
+    object-fit: contain;
+    object-position: center;
+    background: #fff;
     border-radius: 12px;
+    display: block;
     margin-bottom: 15px;
-    transition: transform 0.3s ease;
 }
 .card-button {
     background: linear-gradient(135deg, #6B143B, #8B1A4F);
